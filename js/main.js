@@ -51,12 +51,16 @@ function clickImg(event) {
     modalOvrRef.addEventListener('click', closeModalOvr);
     function closeModalOvr(event) {
         boxRef.classList.remove('is-open');
+        modalImgRef.src = '';
+        modalImgRef.alt = ''; 
     }
    
     window.addEventListener('keydown', closeModalKey);
     function closeModalKey(event) {
         if (event.code === "Escape") {
             boxRef.classList.remove('is-open');
+            modalImgRef.src = '';
+            modalImgRef.alt = ''; 
       } 
     }
 
