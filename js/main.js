@@ -43,7 +43,8 @@ function clickImg(event) {
     
     function closeModal(event) {
         boxRef.classList.remove('is-open');
-        modalImgRef.srcset = '';
+        modalImgRef.src = '';
+        modalImgRef.alt = ''; 
         
     }
     
